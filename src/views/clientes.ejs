@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/estiloCliente.css">
+    <link rel="stylesheet" href="/css/estilosStiven.css">
 </head>
 <body>
     <nav class="navbar navbar-dark bg-dark">
@@ -13,6 +13,8 @@
     </nav>
     <a href="/" class="btn btn-warning" type="button">Ingresar</a>
     
+    <main class="main">
+
     <div class="container">
         <div class="row mt-5">
             <div class="col-md-7">
@@ -41,10 +43,127 @@
                 </div>                
             </div>
         </div>
+        
     </div>
-<footer>
-    <p>© 2024 Tu Empresa</p>
-</footer>
+
+    <section>
+        <h2>NUESTROS CLIENTES</h2>
+        <p>HABLAN POR <br> NOSOTROS</p>
+    </section>
+
+    <!--Section informacion servicios -->
+    <section class="section__informacion-servicios">
+        <div class="informacion-servicios__container">
+            <div class="informacion-servicios__content">
+                <h2 class="informacion-servicios__title">DISEÑO DE PAGINAS WEB</h2>
+                <p class="informacion-servicios__text">
+                    Nos apasiona crear sitios web veloces, que funcionan en cualquier dispositivo, y que te ayudan a dar a conocer tu empresa, proyectando una imagen solida y profesional ante el mercado.
+                </p>
+                <p class="informacion-servicios__leer-mas">LEER MÁS➡️</p>
+            </div>
+            <div class="informacion-servicios__content">
+                <h2 class="informacion-servicios__title">DISEÑO DE TIENDAS VIRTUALES</h2>
+                <p class="informacion-servicios__text">
+                    Lleva tus ventas al siguiente nivel con una tienda virtual hecha 100% a tu medida, desarrollada por los mejores.
+                </p>
+                <p class="informacion-servicios__leer-mas">LEER MÁS➡️</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Section ultimos proyectos -->
+    <section class="section__ultimos-proyectos">
+        <h2 class="ultimos-proyectos__title"> ÚLTIMOS <br> PROYECTOS </h2>
+        <img class="ultimos-proyectos__img" src="/imagenes/proyecto1.jpg" alt="proyecto-ultimo1">
+        <img class="ultimos-proyectos__img" src="/imagenes/proyecto2.png" alt="proyecto-ultimo2">
+        <img class="ultimos-proyectos__img" src="/imagenes//proyecto4.png" alt="proyecto-ultimo3">
+        <button class="ultimos-proyectos__button"> VER TODOS LOS PROYECTOS</button>
+    </section>
+
+    <!-- Aquí va el contenido de quienes Somos de la pagina de inicio-->
+    <section class="section__quienes-somos">
+        <div class="quienes-somos__content">
+            <h2 class="quienes-somos__title">¿Quienes Somos?</h2>
+            <p class="quienes-somos__text">Somos una agencia digital ubicada en Bogota Colombia, contamos con 2 años de experiencia en diseño de páginas web para todo tipo de nicho y tiendas virtuales para empresas.
+                <br>
+                <br>
+                Somos especialistas en ayudar a nuestros clientes  a cumplir sus objetivos y nos hace felir ver como trabajar en equipo, las empresas crecen, incrementan sus ventas y se establecen en el mercado.
+            </p>
+            <img class="quienes-somos__img" src="/imagenes/tipos-paginas-web.jpg" alt="Diseño Web para diferentes dispositivos">
+        </div>
+    </section>
+
+    <!-- Section TEAM Equipo de trabajo -->
+    <section class="section__team">
+        <h2 class="team__title">TEAM</h2>
+        <p class="team__text">Los que hacen realidad tus proyectos</p>
+        <div class="team__container-equipo">
+            <div class="team__container-equipo">
+                <img class="team__img--hover" src="/imagenes/dama1.avif" alt="dama1">
+            </div>
+            <div class="team__container-equipo">
+                <img class="team__img--hover" src="/imagenes/hombre1.avif" alt="hombre1">
+            </div>
+            <div class="team__container-equipo">
+                <img class="team__img--hover" src="/imagenes/hombre2.jpg" alt="hombre2">
+            </div>
+            <div class="team__container-equipo">
+                <img class="team__img--hover" src="/imagenes/dama2.avif" alt="dama2">
+            </div>
+            <div class="team__container-equipo">
+                <img class="team__img--hover" src="/imagenes/hombre3.jpg" alt="hombre3">
+            </div>
+        </div>
+    </section>
+    
+    </main>
+
+    <footer>
+        <div class="footer__container">
+            <img class="tupaginaya__icon" src="/imagenes/tupagina.png" alt="tupaginaYA Logo">
+            <div class="container__icons--footer">
+                <div class="container-icons--footer">
+                    <a href="">
+                        <svg class="social-media--footer">
+                            <use href="/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="container-icons--footer">
+                    <a href="">
+                        <svg class="social-media--footer">
+                            <use href="/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="container-icons--footer">
+                    <a href="">
+                        <svg class="social-media--footer">
+                            <use href="/symbol-defs.svg#icon-whatsapp"></use>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+            <h2 class="title__contacto--footer">CONTACTO</h2>
+            <a href="">
+                <button class="botton__contacto--footer">¡ESCRÍBENOS!</button>
+            </a>
+            <p>¿Agendamos tu cita?</p>
+            <div class="container__agendar--footer">
+                <div class="container-icons--agendar-footer">
+                    <svg class="icon-telefono--footer">
+                        <use href="/symbol-defs.svg#icon-phone" ></use>
+                    </svg>
+                </div>
+                <address class="address__contacto--footer">
+                    <p>Llamanos al</p>
+                    <p>(+57) 312 345 67 89</p>
+                </address>
+            </div>
+            <p class="">© 2024. All rights reserved</p>
+        </div>
+    </footer>
 </body>
 </html>
 
