@@ -80,21 +80,9 @@ nav a:hover {
     background-color: #0056b3;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-
-}
-
-footer p {
-    font-size: 14px;
-}
-
 /* Botón Home */
-.btn-home {
-    background-color: #28a745;
+.btn {
+    background-color:#0056b3;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -105,7 +93,37 @@ footer p {
     display: inline-block;
 }
 
-.btn-home:hover {
-    background-color: #218838;
+.btn:hover {
+    background-color: #0056b3;
 }
 
+/* AQUI EN ADELANTE EL FOOTER */
+
+.footer__container {
+    background-color: #0056b3;
+    gap: 28px;
+    color:  white;
+}
+
+.footer__container {
+    margin: 0;
+    display: grid;
+    place-items: center;
+}
+
+.tupaginaya__icon {
+    margin-top: 40px;
+    width: 200px;
+}
+
+.container__icons--footer {
+    margin-top: 0px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-media--footer {
+    width: 25px;
+    height: 25px;
+    fill: white;
+}
