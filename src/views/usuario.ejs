@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/estilosUsuario.css">
+    
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark">
-        <a href="/" class="navbar-brand">Formulario</a>
+    <nav class="">
+        <a href="/" class="">Formulario</a>
     </nav>
-    <a href="/home" class="btn btn-warning" type="button">Home</a>
+    <a href="/home" class="btn" type="button">Volver a Incio</a>
     
     <div class="container">
         <div class="row mt-5">
@@ -34,9 +35,9 @@
                                     <td><%= (data[i].telefono) %></td>
                                     <td><%= (data[i].comentarios) %></td>
                                     <td>
-                                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                            <a href="/delete/<%= data[i].id %>" class="btn btn-danger" type="button">Eliminar</a>
-                                            <a href="/update/<%= data[i].id %>" class="btn btn-warning" type="button">Editar</a>
+                                        <div class="">
+                                            <a href="/delete/<%= data[i].id %>" class="btn" type="button">Eliminar</a>
+                                            <a href="/update/<%= data[i].id %>" class="btn" type="button">Editar</a>
                                         </div>
                                     </td>
                                 </tr>
