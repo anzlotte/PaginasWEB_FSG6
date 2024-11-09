@@ -26,28 +26,43 @@
                         <th>Acciones</th>
                     </thead>
                     <tbody>
-                        <% if (data) { %>
-                            <% for(var i = 0; i < data.length; i++) { %>
+                        <% if (data && data.length > 0) { %>
+                            <% data.forEach((cliente, i) => { %>
                                 <tr>
                                     <td><%= (i + 1) %></td>
-                                    <td><%= (data[i].nombre) %></td>
-                                    <td><%= (data[i].correo) %></td>
-                                    <td><%= (data[i].telefono) %></td>
-                                    <td><%= (data[i].comentarios) %></td>
-                                    <td>
-                                        <div class="">
-                                            <a href="/delete/<%= data[i].id %>" class="btn" type="button">Eliminar</a>
-                                            <a href="/update/<%= data[i].id %>" class="btn" type="button">Editar</a>
-                                        </div>
+                                    <td><%= cliente.nombre %></td>
+                                    <td><%= cliente.correo %></td>
+                                    <td><%= cliente.telefono %></td>
+                                    <td><%= cliente.comentarios %></td>
+                                    <td class="acciones">
+                                        <a href="/delete/<%= cliente.id %>" class="btn">Editar</a>
+                                        <a href="/update/<%= cliente.id %>" class="btn">Eliminar</a>
                                     </td>
                                 </tr>
-                            <% } %>
+                            <% }); %>
+                        <% } else { %>
+                            <tr>
+                                <td colspan="6">No hay clientes registrados.</td>
+                            </tr>
                         <% } %>
                     </tbody>
-                </table>          
-            </div>
-        </div>
-    </div>
+                </table>
+                
+                <!-- Paginación -->
+                <div class="pagination">
+                    <% if (currentPage > 1) { %>
+                        <a href="/?page=<%= currentPage - 1 %>" class="prev">&laquo; Anterior</a>
+                    <% } %>
+                
+                    <% for (let i = 1; i <= totalPages; i++) { %>
+                        <a href="/?page=<%= i %>" class="<%= i === currentPage ? 'active' : '' %>"><%= i %></a>
+                    <% } %>
+                
+                    <% if (currentPage < totalPages) { %>
+                        <a href="/?page=<%= currentPage + 1 %>" class="next">Siguiente &raquo;</a>
+                    <% } %>
+                </div>
+                
 <footer>
     <div class="footer__container">
         <img class="tupaginaya__icon" src="/imagenes/tupagina.png" alt="tupaginaYA Logo">
