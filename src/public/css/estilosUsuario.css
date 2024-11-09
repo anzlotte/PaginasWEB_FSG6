@@ -47,8 +47,7 @@ nav a:hover {
 }
 
 .table th, .table td {
-    padding: 12px 15px;
-    text-align: left;
+    padding: 10px 15px;
     border-bottom: 1px solid #ddd;
 }
 
@@ -97,12 +96,86 @@ nav a:hover {
     background-color: #0056b3;
 }
 
-/* AQUI EN ADELANTE EL FOOTER */
+/* Ajuste de columna de Observación */
+.table td:nth-child(5) {
+    word-wrap: break-word;
+    max-width: 250px; /* Define un ancho máximo para evitar el desbordamiento */
+    white-space: normal; /* Asegura que el texto no se mantenga en una sola línea */
+}
+
+/* Alineación de botones en columna de Acciones */
+.table td.acciones {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+    justify-content: flex-start; /* Alineación de los botones a la izquierda */
+    padding: 10px 0; /* Ajuste de padding para una mejor alineación */
+}
+
+/* Ajuste de la paginación */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    padding: 8px 15px;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.pagination a:hover {
+    background-color: #0056b3;
+}
+
+.pagination a.active {
+    background-color: #0056b3;
+    font-weight: bold;
+}
+
+/* Estilo de la tabla y control de ancho */
+.table {
+    width: 100%;
+    table-layout: fixed; /* Esto hace que las columnas tengan un ancho fijo */
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.table td:nth-child(1) {
+    width: 5%;
+}
+
+.table td:nth-child(2) {
+    width: 20%;
+}
+
+.table td:nth-child(3) {
+    width: 20%;
+}
+
+.table td:nth-child(4) {
+    width: 15%;
+}
+
+.table td:nth-child(5) {
+    width: 30%;
+}
+
+.table td:nth-child(6) {
+    width: 10%;
+}
 
 .footer__container {
     background-color: #0056b3;
     gap: 28px;
-    color:  white;
+    color: white;
 }
 
 .footer__container {
@@ -127,3 +200,4 @@ nav a:hover {
     height: 25px;
     fill: white;
 }
+
