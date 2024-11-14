@@ -9,6 +9,28 @@
     <link rel="shortcut icon" href="/imagenes/typaginaya.png" type="image/x-icon">
 </head>
 <body>
+    <header class="header">
+        <img class="logo" src="/imagenes/tupagina.png" alt="logotumaginaYa">
+        <nav class="main-nav">
+            <div id="toggle-menu" class="toggle-menu">
+                <img src="/imagenes/lineas.png" alt="lineasMenu">
+            </div>
+            <ul id="main-menu" class="main-menu">
+                <li class="main-menu__item">
+                    <a href="" class="main-menu__link">Inicio</a> <!-- Aqui va un link para el index-->
+                </li>
+                <li class="main-menu__item">
+                    <a href="" class="main-menu__link">Paginas Web</a>  <!-- Aqui va un link para las sub paginas-->
+                </li>
+                <li class="main-menu__item">
+                    <a href="" class="main-menu__link">Blog</a> <!-- Aqui va un link para las sub paginas-->
+                </li>
+                <li class="main-menu__item">
+                    <a href="" class="main-menu__link">¿Quienes Somos?</a> <!-- Aqui va un link para las sub paginas-->
+                </li>
+            </ul>
+        </nav>
+    </header>
     <nav class="navbar navbar-dark bg-dark">
         <a href="/" class="navbar-brand">Formulario</a>
     </nav>
@@ -47,27 +69,101 @@
         
     </div>
 
-    <section>
-        <h2>NUESTROS CLIENTES</h2>
-        <p>HABLAN POR <br> NOSOTROS</p>
+    <!-- Section nuestros clientes   /imagenes/proyecto1.jpg-->
+    <section class="section__nuestros-clientes">
+        <div class="flex">
+            <div class="nuestros-clientes__container1">
+                <h2 class="nuestros-clientes__title">NUESTROS CLIENTES</h2>
+                <p class="nuestros-clientes__text">HABLAN POR <br> NOSOTROS</p>
+                <div class="team__div-separador"></div>
+            </div>
+            <div class="container-opiniones">
+                <!-- Esta primera carta tiene la clase "active" para estar visible al cargar la página -->
+                <div class="nuestros-clientes__container-opinion active">
+                    <div class="card-opinion">
+                        <img class="card-opinion__logo" src="/imagenes/images (1).png" alt="">
+                        <div class="container-info__cliente">
+                            <h3 class="container-info__title">Adidas</h3>
+                            <p class="container-info__text">Hace 5 meses</p>
+                        </div>
+                    </div>
+                    <div class="container__reseña-cliente">
+                        <p class="reseña-cliente__text">Muy buen servicio, fue una buena elección trabajar de la mano con ellos, estuvieron muy atentos a nuestras opiniones y necesidades, son cumplidos en los tiempos y el resultado fue una página web tal cual la requeríamos. Cabe resaltar que luego de la entrega final continúan atendiendo nuestras dudas con la mejor actitud. Recomendados 😁</p>
+                    </div>
+                </div>
+            
+                <div class="nuestros-clientes__container-opinion">
+                    <div class="card-opinion">
+                        <img class="card-opinion__logo" src="/imagenes/mountain-logo-vector-36527917.jpg" alt="">
+                        <div class="container-info__cliente">
+                            <h3 class="container-info__title">Mountain Pictures</h3>
+                            <p class="container-info__text">Hace 7 meses</p>
+                        </div>
+                    </div>
+                    <div class="container__reseña-cliente">
+                        <p class="reseña-cliente__text">El trabajo que me realizaron fue un trabajo de calidad, concreto y sencillo que apunta realmente a la intención y el propósito que tiene mi emprendimiento que se basa en la aventura y el turismo. Las veces que pueda recomendar esta agencia, lo haré.</p>
+                    </div>
+                </div>
+            
+                <div class="nuestros-clientes__container-opinion">
+                    <div class="card-opinion">
+                        <img class="card-opinion__logo" src="/imagenes/images.png" alt="">
+                        <div class="container-info__cliente">
+                            <h3 class="container-info__title">Versace</h3>
+                            <p class="container-info__text">Hace 1 año</p>
+                        </div>
+                    </div>
+                    <div class="container__reseña-cliente">
+                        <p class="reseña-cliente__text">Excelente experiencia trabajando con su equipo. Desde el principio, fueron muy receptivos a nuestras ideas y requerimientos, cumpliendo puntualmente con los plazos establecidos. El resultado final fue exactamente lo que esperábamos, superando nuestras expectativas.</p>
+                    </div>
+                </div>
+            
+                <!-- Botón para cambiar de opinión -->
+                <button class="btn-flecha" id="next-btn">➡️</button>
+            </div>
+        </div>
+        <div class="flex">
+        <button class="ultimos-proyectos__button"> VER TODOS NUESTROS CLIENTES</button>
+        <img class="nuestros-clientes__img" src="/imagenes/LOGOS.jpg" alt="logos-clientes">
+        </div>
     </section>
 
     <!--Section informacion servicios -->
     <section class="section__informacion-servicios">
+        <p class="informacion-servicios__active">SERVICIOS</p>
         <div class="informacion-servicios__container">
-            <div class="informacion-servicios__content">
-                <h2 class="informacion-servicios__title">DISEÑO DE PAGINAS WEB</h2>
-                <p class="informacion-servicios__text">
-                    Nos apasiona crear sitios web veloces, que funcionan en cualquier dispositivo, y que te ayudan a dar a conocer tu empresa, proyectando una imagen solida y profesional ante el mercado.
-                </p>
-                <p class="informacion-servicios__leer-mas">LEER MÁS➡️</p>
+            <div class="flex">
+                <div class="informacion-servicios__content">
+                    <h2 class="informacion-servicios__title">DISEÑO DE PAGINAS WEB</h2>
+                    <p class="informacion-servicios__text">
+                        Nos apasiona crear sitios web veloces, que funcionan en cualquier dispositivo, y que te ayudan a dar a conocer tu empresa, proyectando una imagen solida y profesional ante el mercado.
+                    </p>
+                    <p class="informacion-servicios__leer-mas">LEER MÁS➡️</p>
+                </div>
+                <div class="informacion-servicios__content">
+                    <h2 class="informacion-servicios__title">DISEÑO DE TIENDAS VIRTUALES</h2>
+                    <p class="informacion-servicios__text">
+                        Lleva tus ventas al siguiente nivel con una tienda virtual hecha 100% a tu medida, desarrollada por los mejores.
+                    </p>
+                    <p class="informacion-servicios__leer-mas">LEER MÁS➡️</p>
+                </div>
             </div>
-            <div class="informacion-servicios__content">
-                <h2 class="informacion-servicios__title">DISEÑO DE TIENDAS VIRTUALES</h2>
-                <p class="informacion-servicios__text">
-                    Lleva tus ventas al siguiente nivel con una tienda virtual hecha 100% a tu medida, desarrollada por los mejores.
-                </p>
-                <p class="informacion-servicios__leer-mas">LEER MÁS➡️</p>
+            <div class="team__div-separador-unico"></div>
+            <div class="flex-active">
+                <div class="informacion-servicios__content">
+                    <h2 class="informacion-servicios__title">BLOGS</h2>
+                    <p class="informacion-servicios__text">
+                        Tienes un conocimiento y te apasiona compartilo con los demas para que sientas que aportas a la sociedad, con una pagina web de blog lo podrias hacer, y nos encanta hacerlo realidad..
+                    </p>
+                    <p class="informacion-servicios__leer-mas">LEER MÁS➡️</p>
+                </div>
+                <div class="informacion-servicios__content">
+                    <h2 class="informacion-servicios__title">LANDING PAGES</h2>
+                    <p class="informacion-servicios__text">
+                        Lleva tus ventas al siguiente nivel con una tienda virtual hecha 100% a tu medida, desarrollada por los mejores.
+                    </p>
+                    <p class="informacion-servicios__leer-mas">LEER MÁS➡️</p>
+                </div>
             </div>
         </div>
     </section>
@@ -75,44 +171,75 @@
     <!--Section ultimos proyectos -->
     <section class="section__ultimos-proyectos">
         <h2 class="ultimos-proyectos__title"> ÚLTIMOS <br> PROYECTOS </h2>
-        <img class="ultimos-proyectos__img" src="/imagenes/proyecto1.jpg" alt="proyecto-ultimo1">
-        <img class="ultimos-proyectos__img" src="/imagenes/proyecto2.png" alt="proyecto-ultimo2">
-        <img class="ultimos-proyectos__img" src="/imagenes//proyecto4.png" alt="proyecto-ultimo3">
+        <div class="ultimos-proyectos__container">
+            <img class="ultimos-proyectos__img" src="/imagenes/proyecto1.jpg" alt="proyecto-ultimo1">
+            <img class="ultimos-proyectos__img" src="/imagenes/proyecto5.jpg" alt="proyecto-ultimo2">
+            <img class="ultimos-proyectos__img" src="/imagenes/proyecto4.png" alt="proyecto-ultimo3">
+        </div>
         <button class="ultimos-proyectos__button"> VER TODOS LOS PROYECTOS</button>
     </section>
 
     <!-- Aquí va el contenido de quienes Somos de la pagina de inicio-->
     <section class="section__quienes-somos">
-        <div class="quienes-somos__content">
-            <h2 class="quienes-somos__title">¿Quienes Somos?</h2>
-            <p class="quienes-somos__text">Somos una agencia digital ubicada en Bogota Colombia, contamos con 2 años de experiencia en diseño de páginas web para todo tipo de nicho y tiendas virtuales para empresas.
-                <br>
-                <br>
-                Somos especialistas en ayudar a nuestros clientes  a cumplir sus objetivos y nos hace felir ver como trabajar en equipo, las empresas crecen, incrementan sus ventas y se establecen en el mercado.
-            </p>
-            <img class="quienes-somos__img" src="/imagenes/tipos-paginas-web.jpg" alt="Diseño Web para diferentes dispositivos">
+        <div class="quienes-somos__container">
+            <div class="quienes-somos__content">
+                <h2 class="quienes-somos__title">¿Quienes Somos?</h2>
+                <p class="quienes-somos__text">Somos una agencia digital ubicada en Bogota Colombia, contamos con 2 años de experiencia en diseño de páginas web para todo tipo de nicho y tiendas virtuales para empresas.
+                    <br>
+                    <br>
+                    Somos especialistas en ayudar a nuestros clientes  a cumplir sus objetivos y nos hace felir ver como trabajar en equipo, las empresas crecen, incrementan sus ventas y se establecen en el mercado.
+                </p>
+            </div>
+            <div class="quienes-somos__container-img">
+                <img class="quienes-somos__img" src="/imagenes/tipos-paginas-web.jpg" alt="Diseño Web para diferentes dispositivos">
+            </div>
         </div>
     </section>
 
     <!-- Section TEAM Equipo de trabajo -->
     <section class="section__team">
         <h2 class="team__title">TEAM</h2>
+        <div class="team__div"></div>
         <p class="team__text">Los que hacen realidad tus proyectos</p>
         <div class="team__container-equipo">
-            <div class="team__container-equipo">
-                <img class="team__img--hover" src="/imagenes/dama1.avif" alt="dama1">
+            <div class="card-container">
+                <img class="team__img--hover" src="/imagenes/dama2.avif" alt="dama1">
+                <div class="card-text">
+                    <h2>Monica</h2>
+                    <p>Desarrolladora Web</p>
+                </div>
             </div>
-            <div class="team__container-equipo">
+        
+            <div class="card-container">
                 <img class="team__img--hover" src="/imagenes/hombre1.avif" alt="hombre1">
+                <div class="card-text">
+                    <h2>Jorge Morales</h2>
+                    <p>Desarrollador Web</p>
+                </div>
             </div>
-            <div class="team__container-equipo">
+        
+            <div class="card-container">
                 <img class="team__img--hover" src="/imagenes/hombre2.jpg" alt="hombre2">
+                <div class="card-text">
+                    <h2>Andres Lote</h2>
+                    <p>Desarrollador Web</p>
+                </div>
             </div>
-            <div class="team__container-equipo">
+        
+            <div class="card-container">
                 <img class="team__img--hover" src="/imagenes/dama2.avif" alt="dama2">
+                <div class="card-text">
+                    <h2>Amparo</h2>
+                    <p>Desarrolladora Web</p>
+                </div>
             </div>
-            <div class="team__container-equipo">
+        
+            <div class="card-container">
                 <img class="team__img--hover" src="/imagenes/hombre3.jpg" alt="hombre3">
+                <div class="card-text">
+                    <h2>Stiven Aguirre</h2>
+                    <p>Desarrollador Web</p>
+                </div>
             </div>
         </div>
     </section>
@@ -121,50 +248,58 @@
 
     <footer>
         <div class="footer__container">
-            <img class="tupaginaya__icon" src="/imagenes/tupagina.png" alt="tupaginaYA Logo">
-            <div class="container__icons--footer">
-                <div class="container-icons--footer">
-                    <a href="">
-                        <svg class="social-media--footer">
-                            <use href="/symbol-defs.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
+            <div class="footer__container1">
+                <img class="tupaginaya__icon" src="/imagenes/tupagina.png" alt="tupaginaYA Logo">
+                <div class="container__icons--footer">
+                    <div class="container-icons--footer">
+                        <a href="">
+                            <svg class="social-media--footer">
+                                <use href="/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="container-icons--footer">
+                        <a href="">
+                            <svg class="social-media--footer">
+                                <use href="/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="container-icons--footer">
+                        <a href="">
+                            <svg class="social-media--footer">
+                                <use href="/symbol-defs.svg#icon-whatsapp"></use>
+                            </svg>
+                        </a>
+                    </div>
+    
                 </div>
-                <div class="container-icons--footer">
-                    <a href="">
-                        <svg class="social-media--footer">
-                            <use href="/symbol-defs.svg#icon-instagram"></use>
+            </div>
+            <div class="footer__container2">
+                <h2 class="title__contacto--footer">CONTACTO</h2>
+                <p class="text__contacto--footer">¿Agendamos tu cita?</p>
+                <div class="container__agendar--footer">
+                    <div class="container-icons--agendar-footer">
+                        <svg class="icon-telefono--footer">
+                            <use href="/symbol-defs.svg#icon-phone" ></use>
                         </svg>
-                    </a>
-                </div>
-                <div class="container-icons--footer">
-                    <a href="">
-                        <svg class="social-media--footer">
-                            <use href="/symbol-defs.svg#icon-whatsapp"></use>
-                        </svg>
-                    </a>
+                    </div>
+                    <address class="address__contacto--footer">
+                        <p>Llamanos al</p>
+                        <p>(+57) 312 345 67 89</p>
+                    </address>
                 </div>
 
             </div>
-            <h2 class="title__contacto--footer">CONTACTO</h2>
-            <a href="">
-                <button class="botton__contacto--footer">¡ESCRÍBENOS!</button>
-            </a>
-            <p>¿Agendamos tu cita?</p>
-            <div class="container__agendar--footer">
-                <div class="container-icons--agendar-footer">
-                    <svg class="icon-telefono--footer">
-                        <use href="/symbol-defs.svg#icon-phone" ></use>
-                    </svg>
-                </div>
-                <address class="address__contacto--footer">
-                    <p>Llamanos al</p>
-                    <p>(+57) 312 345 67 89</p>
-                </address>
-            </div>
-            <p class="">© 2024. All rights reserved</p>
+            <div class="footer__container3">
+                <a href="">
+                    <button class="botton__contacto--footer">¡ESCRÍBENOS!</button>
+                </a>
+            </div> 
         </div>
+        <p class="text__reserved">© 2024. All rights reserved</p>
     </footer>
+    <script src="/indexStiven.js"></script>
 </body>
 </html>
 
