@@ -1,7 +1,7 @@
 /* Estilos Generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #0095ff;
+    background-color: white;
     padding: 0;
     height: 100%; /* El body debe ocupar toda la altura disponible */
     margin: 0; /* Elimina los márgenes predeterminados del navegador */
@@ -26,13 +26,38 @@ a {
     padding: 10px;
 }
 
-footer {
-    background-color: #696567;
+.footer__container {
+    background-color: #0056b3;
+    gap:30px;
     color: white;
-    text-align: center; /* Centra el texto dentro del footer */
-    padding: 10px;
+    margin: 25px 0; /* Espacio arriba y abajo del footer */
     
 }
+
+.footer__container {
+    margin: 50;
+    display: grid;
+    place-items: center;
+}
+
+.tupaginaya__icon {
+    margin-top: 40px;
+    width: 200px;
+}
+
+.container__icons--footer {
+    margin-top: 0px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-media--footer {
+    width: 25px;
+    height: 25px;
+    fill: white;
+}
+    
+
 /* Estilos del formulario */
 .formulario {
     background-color: white;
@@ -92,13 +117,28 @@ footer {
 
 /* Estilos del Header */
 .header {
-    background-color: #696567;
-    color: white;
+    
+    color: black;
     padding: 20px 0;
-    /*text-align: center;*/
     display: flex;
-    justify-content: space-between;
-    /*align-items: center;*/
-    padding: 10px 50px;
+    justify-content: center;  /* Centra el contenido horizontalmente */
+    align-items: center;      /* Centra el contenido verticalmente */
+    width: 100%;              /* Asegura que el header ocupe todo el ancho disponible */
+    margin: 0;
     box-sizing: border-box;
+}
+
+/* Contenedor interno del header para restringir el ancho */
+.header .container {
+    width: 100%;              /* Ocupa todo el ancho disponible del header */
+    max-width: 1200px;        /* Limita el ancho máximo del contenedor */
+    padding: 0 20px;          /* Agrega un poco de espacio a los lados */
+    display: flex;
+    justify-content: center;  /* Centra el contenido */
+}
+
+/* Centrado del h1 dentro del contenedor */
+.header h1 {
+    margin: 0;  /* Elimina márgenes predeterminados */
+    text-align: center;  /* Asegura que el título se centre dentro de su contenedor */
 }

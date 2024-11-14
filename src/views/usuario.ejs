@@ -7,12 +7,24 @@
     <link rel="stylesheet" href="/css/estilosUsuario.css">
     <link rel="shortcut icon" href="/imagenes/typaginaya.png" type="image/x-icon">
 </head>
-<body>
-    <nav class="">
-        <a href="/" class="">Formulario de clientes</a>
+ <!-- Se agrega los enlaces -->
+ <header>
+    <nav>
+        <ul>
+            <li><a href="/home" class="" type="button">Home</a></li>
+            <li><a href="#home"></a></li>
+            <li><a href="#services"></a></li>
+            <li><a href="#portfolio"></a></li>
+            <li><a href="#contact"></a></li>
+        </ul>
     </nav>
-    <a href="/home" class="btn" type="button">Home</a>
-    
+</header>
+<body>
+    <!-- Contenedor principal del formulario -->
+    <div class="form-container">
+        <h1 class="form-title">Formulario de Clientes</h1>
+        <div class="container">
+     
     <div class="container">
         <div class="row mt-5">
             <div class="col-md-7">
@@ -35,8 +47,8 @@
                                     <td><%= cliente.telefono %></td>
                                     <td><%= cliente.comentarios %></td>
                                     <td class="acciones">
-                                        <a href="/delete/<%= cliente.id %>" class="btn">Editar</a>
-                                        <a href="/update/<%= cliente.id %>" class="btn">Eliminar</a>
+                                        <a href="/update/<%= cliente.id %>" class="btn">Editar</a>
+                                        <a href="/delete/<%= cliente.id %>" class="btn">Eliminar</a>
                                     </td>
                                 </tr>
                             <% }); %>
