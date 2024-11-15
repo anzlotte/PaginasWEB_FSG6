@@ -74,7 +74,7 @@ nav a:hover {
 }
 
 .table th {
-    background-color: #007bff;
+    background-color: #0056b3;
     color: white;
 }
 
@@ -87,7 +87,7 @@ nav a:hover {
 }
 
 .table .btn {
-    background-color: #007bff;
+    background-color: #0056b3;
     color: white;
     padding: 8px 15px;
     text-decoration: none;
@@ -103,7 +103,7 @@ nav a:hover {
 
 /* Botón Home */
 .btn {
-    background-color: #007bff;
+    background-color: #0056b3;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -143,7 +143,7 @@ nav a:hover {
 .pagination a {
     padding: 8px 15px;
     margin: 0 5px;
-    background-color: #007bff;
+    background-color: #0056b3;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -230,7 +230,7 @@ nav a:hover {
 
 
 header {
-    background-color: #0095FF;
+    background-color: #0056b3;
     color: white;
     padding: 05px 0;
 }

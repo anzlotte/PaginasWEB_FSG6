@@ -2,17 +2,15 @@
 body {
     font-family: Arial, sans-serif;
     background-color: white;
+    margin: 0;
     padding: 0;
-    height: 100%; /* El body debe ocupar toda la altura disponible */
-    margin: 0; /* Elimina los márgenes predeterminados del navegador */
-    display: flex; /* Usamos flexbox para hacer que el contenido principal ocupe el espacio disponible */
-    flex-direction: column; /* Coloca los elementos (contenido y footer) en columna */
-    
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 h2, h3, p {
     margin: 10px 0;
-    
 }
 
 a {
@@ -20,52 +18,61 @@ a {
     color: inherit;
 }
 
-.nav-link {
-    font-size: 18px;
-    color: #333;
-    padding: 10px;
-}
-
-.footer__container {
+/* Estilos del menú */
+header {
     background-color: #0056b3;
-    gap:30px;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
     color: white;
-    margin: 25px 0; /* Espacio arriba y abajo del footer */
-    
+    font-size: 18px;
+    text-decoration: none;
 }
 
-.footer__container {
-    margin: 50;
-    display: grid;
-    place-items: center;
+nav ul li a:hover {
+    color: gray; /* Color al pasar el mouse */
 }
 
-.tupaginaya__icon {
-    margin-top: 40px;
-    width: 200px;
+/* Estilo del Header con el título */
+.header1 {
+    text-align: center; /* Centra el contenido dentro del header */
+    margin-top: 40px; /* Da un margen superior para separar del menú */
+    background-color: transparent; /* Se asegura que no tenga fondo azul */
 }
 
-.container__icons--footer {
-    margin-top: 0px;
-    display: flex;
-    gap: 15px;
+.header1 h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #333;
 }
-
-.social-media--footer {
-    width: 25px;
-    height: 25px;
-    fill: white;
-}
-    
 
 /* Estilos del formulario */
+.container {
+    display: flex;
+    justify-content: center; /* Centra el formulario horizontalmente */
+    margin-top: 40px; /* Da espacio después del título */
+}
+
 .formulario {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    margin: 20px auto;
+    width: 100%;
 }
 
 .form-group {
@@ -82,12 +89,12 @@ a {
 
 .form-control:focus {
     outline: none;
-    border-color: #4CAF50;
+    border-color: #0056b3;
     box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
 }
 
 .btn {
-    background-color: #0095ff;
+    background-color: #0056b3;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -103,42 +110,30 @@ a {
 }
 
 .btn-submit {
-    background-color: #2196F3;
+    background-color: #0056b3;
 }
 
 .btn-submit:hover {
     background-color: #696567;
 }
 
-.btn:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
+/* Estilos del Footer */
+.footer__container {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }
 
-/* Estilos del Header */
-.header {
-    
-    color: black;
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;  /* Centra el contenido horizontalmente */
-    align-items: center;      /* Centra el contenido verticalmente */
-    width: 100%;              /* Asegura que el header ocupe todo el ancho disponible */
-    margin: 0;
-    box-sizing: border-box;
+.tupaginaya__icon {
+    width: 100px;
+    margin-bottom: 20px;
 }
 
-/* Contenedor interno del header para restringir el ancho */
-.header .container {
-    width: 100%;              /* Ocupa todo el ancho disponible del header */
-    max-width: 1200px;        /* Limita el ancho máximo del contenedor */
-    padding: 0 20px;          /* Agrega un poco de espacio a los lados */
-    display: flex;
-    justify-content: center;  /* Centra el contenido */
-}
-
-/* Centrado del h1 dentro del contenedor */
-.header h1 {
-    margin: 0;  /* Elimina márgenes predeterminados */
-    text-align: center;  /* Asegura que el título se centre dentro de su contenedor */
+/* Responsive: Mejorar diseño en pantallas pequeñas */
+@media (max-width: 768px) {
+    .formulario {
+        width: 90%; /* Se ajusta el formulario en pantallas pequeñas */
+    }
 }

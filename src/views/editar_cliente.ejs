@@ -6,15 +6,30 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/estilosEditar.css" />
 </head>
-<body>
+
+<!-- Menú superior -->
+<header>
     <nav>
-         <!-- Header -->
-    <header class="header">
+        <ul>
+            <li><a href="/home" class="nav-link">home</a></li>
+            <li><a href="#home" class="nav-link">1</a></li>
+            <li><a href="#services" class="nav-link">2</a></li>
+            <li><a href="#portfolio" class="nav-link">3</a></li>
+            <li><a href="#contact" class="nav-link">4</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+
+    <!-- Título central -->
+    <header class="header1">
         <div>
             <h1>Editar información del Usuario</h1>
         </div>
     </header>
-    <!-- Contenedor principal -->
+
+    <!-- Contenedor principal del formulario -->
     <div class="container">
         <form action="/update/<%= data.id %>" method="post" class="formulario">
             <div class="form-group">
@@ -34,15 +49,13 @@
         </form>
     </div>
 
-
+    <!-- Footer -->
     <footer>
         <div class="footer__container">
             <img class="tupaginaya__icon" src="/imagenes/tupagina.png" alt="tupaginaYA Logo">
-            <div class="container__icons--footer">
-                <div class="container-icons--footer">
-                </div>
-            <p class="">© 2024. All rights reserved</p>
+            <p>© 2024. All rights reserved</p>
         </div>
     </footer>
+
 </body>
 </html>
