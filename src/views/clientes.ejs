@@ -38,35 +38,45 @@
     
     <main class="main">
 
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col-md-7">
-                <div>
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <form action="/add" method="post">
-                                    <div class="form-group">
-                                        <input type="text" name="nombre" placeholder="Nombre" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" name="correo" placeholder="Correo" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="number" name="telefono" placeholder="Telefono" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <textarea name="comentarios" placeholder="Comentario" class="form-control"></textarea>
-                                    </div>
-                                    <button type="submit" class="btn btn-success">Enviar</button>
-                                </form>
+    <div class="hero">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-7">
+                    <div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="card-body__title"><strong>Formulario</strong>  de <br> Contacto</h2>
+                                    <div class="card-body__separador"></div>
+                                    <p class="card-body__text">Completa el siguiente formulario de contacto con tus datos y te llamaremos de inmediato para brindarte más información sobre nuestros servicios de </p>
+                                    <form action="/add" method="post">
+                                        <div class="form-group">
+                                            <label class="form-label">Tu nombre (Requerido)</label>
+                                            <input type="text" name="nombre" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">Tu correo (Requerido)</label>
+                                            <input type="email" name="correo" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">Tu teléfono (Requerido)</label>
+                                            <input type="number" name="telefono" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">Tu mensaje</label>
+                                            <textarea name="comentarios" class="form-control-comentario"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-success">Enviar</button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>                
+                    </div>                
+                </div>
             </div>
+            
         </div>
-        
     </div>
 
     <!-- Section nuestros clientes   /imagenes/proyecto1.jpg-->
@@ -140,12 +150,12 @@
                     </p>
                     <p class="informacion-servicios__leer-mas">LEER MÁS➡️</p>
                 </div>
-                <div class="informacion-servicios__content">
+                <div class="informacion-servicios__content margin">
                     <h2 class="informacion-servicios__title">DISEÑO DE TIENDAS VIRTUALES</h2>
                     <p class="informacion-servicios__text">
                         Lleva tus ventas al siguiente nivel con una tienda virtual hecha 100% a tu medida, desarrollada por los mejores.
                     </p>
-                    <p class="informacion-servicios__leer-mas">LEER MÁS➡️</p>
+                    <p class="informacion-servicios__leer-mas mas">LEER MÁS➡️</p>
                 </div>
             </div>
             <div class="team__div-separador-unico"></div>
@@ -157,12 +167,12 @@
                     </p>
                     <p class="informacion-servicios__leer-mas">LEER MÁS➡️</p>
                 </div>
-                <div class="informacion-servicios__content">
+                <div class="informacion-servicios__content margin">
                     <h2 class="informacion-servicios__title">LANDING PAGES</h2>
                     <p class="informacion-servicios__text">
                         Lleva tus ventas al siguiente nivel con una tienda virtual hecha 100% a tu medida, desarrollada por los mejores.
                     </p>
-                    <p class="informacion-servicios__leer-mas">LEER MÁS➡️</p>
+                    <p class="informacion-servicios__leer-mas mas">LEER MÁS➡️</p>
                 </div>
             </div>
         </div>
@@ -176,7 +186,7 @@
             <img class="ultimos-proyectos__img" src="/imagenes/proyecto5.jpg" alt="proyecto-ultimo2">
             <img class="ultimos-proyectos__img" src="/imagenes/proyecto4.png" alt="proyecto-ultimo3">
         </div>
-        <button class="ultimos-proyectos__button"> VER TODOS LOS PROYECTOS</button>
+        <button class="ultimos-proyectos__button proyectos"> VER TODOS LOS PROYECTOS</button>
     </section>
 
     <!-- Aquí va el contenido de quienes Somos de la pagina de inicio-->
