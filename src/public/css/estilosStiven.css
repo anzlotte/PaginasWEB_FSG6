@@ -223,8 +223,9 @@ img {
 .section__informacion-servicios {
     position: relative;
     width: 100%;
-    height: 110vh; 
+    min-height: 95vh; 
     background: url("/imagenes/wave.svg") no-repeat center center/cover; 
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -238,6 +239,10 @@ img {
 
 .flex-active {
     display: none;
+}
+
+.informacion-servicios__container {
+    overflow: hidden;
 }
 
 .section__informacion-servicios .informacion-servicios__container {
@@ -285,6 +290,7 @@ img {
 }
 
 .ultimos-proyectos__title {
+    margin-bottom: 20px;
     text-align: center;
     color: var(--color-pagina-two);
     letter-spacing: 12px;
@@ -319,8 +325,9 @@ img {
 .section__quienes-somos {
     position: relative;
     width: 100%;
-    height: 140vh; 
+    height: 125vh; 
     background: url("/imagenes/wave.svg") no-repeat center center/cover; 
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -563,10 +570,102 @@ img {
 }
 
 
+.hero {
+    position: relative;
+    background-image: url("/imagenes/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120vh;
+    background-color: rgba(0, 0, 0, 0.6); /* Capa semi-transparente */
+    z-index: 1;
+}
+
+.container {
+    z-index: 2;
+}
+
+.card {
+    display: grid;
+    place-items: center;
+    background-color: transparent;
+}
+
+.card-body {
+    width: 90%;
+    padding: 5px;
+    margin: 10px;
+    color: white;
+}
+
+.card-body__title {
+    margin-bottom: 20px;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.card-body__separador {
+    width: 20%;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+}
+
+.card-body__text {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.form-control {
+    margin: 0px 0 5px 0;
+    border-radius: 10px;
+}
+
+.form-control-comentario {
+    border-radius: 10px;
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: 120px; /* Establece una altura mayor */
+    padding: 10px; /* Añade algo de padding para mejor legibilidad */
+    font-size: 16px; /* Ajusta el tamaño del texto para mayor comodidad */
+    resize: vertical;
+}
+
+.btn {
+    width: 100%;
+    background-color: var(--color-pagina-one);
+    border: 1px solid var(--color-pagina-one);
+    border-radius: 25px;
+}
 
 /* MEDIA QUERY ESTILOS PARA TABLETAS 768PX HASTA 1024PX  */
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
+
+    .hero {
+        height: 45vh;
+    }
+
+    .overlay {
+        height: 45vh;
+    }
+    
     .header {
         display: flex;
         align-items: center;
@@ -700,6 +799,7 @@ img {
         gap: 20px;
         justify-content: center;
         align-self: center;
+        margin-bottom: 30px;
     }
 
     .ultimos-proyectos__img {
@@ -756,6 +856,7 @@ img {
     }
 
     .footer__container {
+        margin-left: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -786,5 +887,81 @@ img {
     .ultimos-proyectos__button {
         margin-top: 15px;
         margin: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1024px){
+    .hero {
+        display: flex;
+        background-image: url("/imagenes/hero.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+
+
+    .overlay {
+        height: 100vh;
+    }
+
+    .section__nuestros-clientes {
+        margin: auto;
+        max-width: 80%;
+    }
+
+    .section__informacion-servicios {
+        height: 110vh;
+    }
+
+    .margin {
+        margin-top: 5px;
+    }
+
+    .mas {
+        margin-top: 32px;
+    }
+
+    .informacion-servicios__active {
+        top: 450px;
+    }
+
+    .proyectos {
+        margin-top: 30px;
+    }
+
+    .section__quienes-somos {
+        height: 110vh;
+    }
+
+    .quienes-somos__container {
+        margin-top: 150px;
+    }
+
+    .team__container-equipo {
+        overflow-x: hidden;
+        scroll-snap-type: none;
+        scroll-behavior: none;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .card-container {
+        flex: 0 0 18%;
+        scroll-snap-align: none;
+        object-fit: none;
+    }
+
+    .footer__container2 {
+        margin-top: 15px;
     }
 }
