@@ -16,24 +16,7 @@ controller.admon = (req,res)=>{
     });
 };
 
-controller.home = (req,res)=>{
-    res.render('clientes',{
-    });
-};
-controller.login = (req,res)=>{
-    res.render('administrador/inicioSesion',{
-    });
-};
-controller.admon = (req,res)=>{
-    res.render('administrador/admonUsuarios',{
-    });
-};
 
-controller.list = (req,res)=>{
-    req.getConnection((err, conn)=>{
-        conn.query('SELECT * FROM clientes',(err,clientes)=>{
-            if(err){
-                res.json(err);
 /** Cerrar Sesion */
 
 controller.logout = (req,res)=>{
@@ -112,17 +95,7 @@ controller.guardar = (req, res)=>{
 };
 
 /** Controlador Usuarios */
-controller.list = (req,res)=>{
-    req.getConnection((err, conn)=>{
-        conn.query('SELECT * FROM clientes',(err,clientes)=>{
-            if(err){
-                res.json(err);
-            }
-            console.log(clientes);
-            
-            res.render('usuario',{
-                
-                data: clientes
+
 controller.list = (req, res) => {
     // Definir la cantidad de registros por página
     const limit = 7;  // Por ejemplo, 10 clientes por página
