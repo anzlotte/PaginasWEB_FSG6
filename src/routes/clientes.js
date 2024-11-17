@@ -8,6 +8,7 @@ router.post('/add',clienteCrontroller.guardar);
 router.get('/delete/:id', clienteCrontroller.eliminar);
 router.get('/update/:id', clienteCrontroller.obtenerCliente);
 router.post('/update/:id', clienteCrontroller.editar);
+router.get('/nextbtn', clienteCrontroller.nextbtn);
 
 //Controller usuarios
 router.get('/login', clienteCrontroller.login);

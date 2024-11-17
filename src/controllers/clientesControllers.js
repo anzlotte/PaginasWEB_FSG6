@@ -16,6 +16,16 @@ controller.admon = (req,res)=>{
     });
 };
 
+controller.home = (req,res)=>{
+    res.render('clientes',{
+    });
+};
+
+controller.list = (req,res)=>{
+    req.getConnection((err, conn)=>{
+        conn.query('SELECT * FROM clientes',(err,clientes)=>{
+            if(err){
+                res.json(err);
 /** Cerrar Sesion */
 
 controller.logout = (req,res)=>{
@@ -45,6 +55,7 @@ controller.auth = (req,res)=>{
                 });
             } else {
                 //mensaje Usuario no existe
+main
             }
         });
     });
