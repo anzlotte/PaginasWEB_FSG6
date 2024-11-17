@@ -1,0 +1,253 @@
+/* Estilos generales */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #A7C7E7, #F3F4F6);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110vh;
+  flex-direction: column;
+}
+
+  :root {
+    --color-pagina-one: #0095ff;
+    --color-text: #fff;
+    --color-pagina-two: #696567;
+}
+  
+  /* Estilo para el navbar */
+  .navbar {
+    width: 100%;
+    background-color: var(--color-pagina-one);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para destacar el navbar */
+    padding: 15px 30px;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-title {
+    font-size: 28px; /* Título grande */
+    color: var(--color-text);
+    font-weight: 600; /* Negrita */
+    margin: 0; /* Eliminar márgenes por defecto */
+  }
+  
+  .navbar a {
+    font-size: 16px;
+    color: var(--color-text);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background-color: var(--color-pagina-two);
+    color: white;
+  }
+  
+  /* Estilo para el título de la página */
+  .page-title {
+    font-size: 36px;
+    text-align: center;
+    color: var(--color-pagina-one);
+    margin-bottom: 30px;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    background-color: #FFFFFF; /* Blanco */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+  
+  /* Estilo del formulario */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    background-color: #F9FAFB; /* Gris muy claro */
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="text"]:focus {
+    border-color: var(--color-pagina-one);
+    background-color: #ffffff; /* Blanco al hacer foco */
+    outline: none;
+  }
+  
+  input[type="submit"] {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: var(--color-pagina-one);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: var(--color-pagina-one);
+    transform: translateY(-2px); /* Efecto de elevación */
+  }
+  
+  input[type="submit"]:active {
+    transform: translateY(0); /* Efecto al hacer clic */
+  }
+  
+  /* Estilos footer*/
+  footer {
+    width: 100%;
+    margin-top: 60px; /* Añadir separación entre el formulario y el footer */
+  }
+  
+  .footer {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-top: 20px;
+  }
+  
+  .footer a {
+    color: var(--color-pagina-one);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilo para el ícono del título */
+  .icon-container {
+    font-size: 48px; /* Tamaño grande para el ícono */
+    color: var(--color-pagina-one);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer__container {
+    background-color: var(--color-pagina-one);
+    gap: 28px;
+    color: var(--color-text);
+}
+
+.footer__container {
+    margin: 0;
+    display: grid;
+    place-items: center;
+}
+
+.tupaginaya__icon {
+    margin-top: 40px;
+    width: 200px;
+}
+
+.container__icons--footer {
+    margin-top: 0px;
+    display: flex;
+    gap: 15px;
+}
+
+.container-icons--footer {
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.social-media--footer {
+    width: 25px;
+    height: 25px;
+    fill: var(--color-text);
+}
+
+.title__contacto--footer {
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.botton__contacto--footer {
+    width: 260px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 30px;
+    background-color: transparent;
+    font-size: 16px;
+    color: var(--color-text);
+}
+
+.container__agendar--footer {
+    display: flex;
+}
+
+.container-icons--agendar-footer {
+    display: grid;
+    place-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: var(--color-text);
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.icon-telefono--footer {
+    width: 15px;
+    height: 15px;
+    fill: var(--color-pagina-one);
+}
+
+.address__contacto--footer {
+    display: flex;
+    margin-top: 3px;
+    gap: 5px;
+}
+
+
+
+/* Estilo para la imagen */
+.titulo_tupaginaya {
+    width: 250px;
+    height: auto;
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;        
+}   
