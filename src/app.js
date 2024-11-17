@@ -3,12 +3,16 @@ const path = require('path');
 const morgan = require('morgan');
 const mysql = require('mysql');
 const myConnection = require('express-myconnection');
+const { engine } = require("express-handlebars");
+const session = require("express-session");
+const bodyParser = require("body-parser");
 
 const app = express();
 
 // importando rutas
 
 const clientesRoutes = require('./routes/clientes');
+const { ExpressHandlebars } = require('express-handlebars');
 //const usuariosRoutes = require('./routes/usuario');
 
 
@@ -29,9 +33,14 @@ app.use(myConnection(mysql, {
     database: 'paginasweb;'
 },'single'));
 
+app.use(session({
+    secret: 'secret',
+    resave: true,
+    saveUninitialized: true
+}))
 //Permitir los datos que viene del formulario
 app.use(express.urlencoded({extended:false}));
-
+app.use(bodyParser.json());
 //routes
 app.use('/',clientesRoutes);
 //app.use('/',usuariosRoutes);

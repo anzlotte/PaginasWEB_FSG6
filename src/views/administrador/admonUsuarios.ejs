@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Incluimos Font Awesome para los iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/estiloSesion.css">
+
+  </head>
+  <body class="">
+    <nav class="navbar">
+      <div class="navbar-container">
+        <h1 class="navbar-title">Tu Pagina Ya</h1>
+        <a href="/home" class="btn-warning" type="button">Home</a>
+        <a href="/" class="btn-warning" type="button">Usuarios</a>
+        <a href="/logout" class="btn-warning" type="button">Cerrar Sesión</a>
+      </div>
+    </nav>
+    <h1 class="page-title">Registrar Usuarios</h1>
+    <!-- El resto del contenido -->
+    
+      <div class="container">
+        <div class="icon-container">
+          <i class="fas fa-user"></i>
+        </div>
+        <form action="/guardarU" method="post">
+          <input type="text" name="Nombre" placeholder="Nombre" id="Nombre" required>
+          <input type="email" name="email" placeholder="Email" id="email" required>
+          <input type="password" name="password" placeholder="Contraseña" id="password" required>
+  
+          <input type="submit" value="Guardar">
+        </form>
+        <div class="footer">
+          <p>¿No tienes cuenta contacta al administrador? <a href="/">Volver a usuarios</a></p>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer__container">
+            <img class="tupaginaya__icon" src="/imagenes/tupagina.png" alt="tupaginaYA Logo">
+            <div class="container__icons--footer">
+                <div class="container-icons--footer">
+                    <a href="">
+                        <svg class="social-media--footer">
+                            <use href="/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="container-icons--footer">
+                    <a href="">
+                        <svg class="social-media--footer">
+                            <use href="/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="container-icons--footer">
+                    <a href="">
+                        <svg class="social-media--footer">
+                            <use href="/symbol-defs.svg#icon-whatsapp"></use>
+                        </svg>
+                    </a>
+                </div>
+  
+            </div>
+            <div class="container__agendar--footer">
+                <div class="container-icons--agendar-footer">
+                    <svg class="icon-telefono--footer">
+                        <use href="/symbol-defs.svg#icon-phone" ></use>
+                    </svg>
+                </div>
+                <address class="address__contacto--footer">
+                    <p>Llamanos al</p>
+                    <p>(+57) 312 345 67 89</p>
+                </address>
+            </div>
+            <p class="">© 2024. All rights reserved</p>
+        </div>
+    </footer>
+      
+  </body>
+</html>

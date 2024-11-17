@@ -1,0 +1,139 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+h2, h3, p {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estilos del menú */
+header {
+    background-color: #0056b3;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: gray; /* Color al pasar el mouse */
+}
+
+/* Estilo del Header con el título */
+.header1 {
+    text-align: center; /* Centra el contenido dentro del header */
+    margin-top: 40px; /* Da un margen superior para separar del menú */
+    background-color: transparent; /* Se asegura que no tenga fondo azul */
+}
+
+.header1 h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #333;
+}
+
+/* Estilos del formulario */
+.container {
+    display: flex;
+    justify-content: center; /* Centra el formulario horizontalmente */
+    margin-top: 40px; /* Da espacio después del título */
+}
+
+.formulario {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+}
+
+.btn {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 5px;
+}
+
+.btn:hover {
+    background-color: #696567;
+}
+
+.btn-submit {
+    background-color: #0056b3;
+}
+
+.btn-submit:hover {
+    background-color: #696567;
+}
+
+/* Estilos del Footer */
+.footer__container {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.tupaginaya__icon {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+/* Responsive: Mejorar diseño en pantallas pequeñas */
+@media (max-width: 768px) {
+    .formulario {
+        width: 90%; /* Se ajusta el formulario en pantallas pequeñas */
+    }
+}
