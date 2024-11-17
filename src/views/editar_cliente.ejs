@@ -6,15 +6,28 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/estilosEditar.css" />
 </head>
-<body>
+
+<!-- Menú superior -->
+<header>
     <nav>
-         <!-- Header -->
-    <header class="header">
+        <ul>
+            <li><a href="/Home" class="nav-link">Home</a></li>
+            <li><a href="/admon" class="" type="button">Administrador</a></li>
+            <li><a href="/logout" class="" type="button">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+
+    <!-- Título central -->
+    <header class="header1">
         <div>
             <h1>Editar información del Usuario</h1>
         </div>
     </header>
-    <!-- Contenedor principal -->
+
+    <!-- Contenedor principal del formulario -->
     <div class="container">
         <form action="/update/<%= data.id %>" method="post" class="formulario">
             <div class="form-group">
@@ -34,9 +47,13 @@
         </form>
     </div>
 
-
+    <!-- Footer -->
     <footer>
-        <p>© 2024 MiPaginaYA</p>
+        <div class="footer__container">
+            <img class="tupaginaya__icon" src="/imagenes/tupagina.png" alt="tupaginaYA Logo">
+            <p>© 2024. All rights reserved</p>
+        </div>
     </footer>
+
 </body>
 </html>

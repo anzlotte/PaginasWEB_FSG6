@@ -12,8 +12,8 @@ body {
 }
 
 nav {
-    background-color: #333;
-    padding: 10px;
+    
+    padding: 05px;
     text-align: center;
 }
 
@@ -31,29 +31,50 @@ nav a:hover {
     background-color: #555;
 }
 
-.container {
-    padding: 30px;
+/* Contenedor principal del formulario */
+.form-container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 50px auto; /* Centrado en la página */
+    padding: 20px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.form-title {
+    text-align: center; /* Centrado horizontal */
+    font-size: 2rem;
+    margin-bottom: 20px; /* Espacio debajo del título */
+    color: #333;
+}
 
+.container {
+    padding: 30px;
+}.form-title {
+    text-align: center; /* Centrado horizontal */
+    font-size: 2rem;
+    margin-bottom: 20px; /* Espacio debajo del título */
+    color: #333;
+}
+
+.container {
+    padding: 30px;
+}
+
+/* Ajuste de tabla */
 .table {
     width: 100%;
     border-collapse: collapse;
+    
     margin-top: 20px;
 }
 
 .table th, .table td {
-    padding: 12px 15px;
-    text-align: left;
+    padding: 10px 15px;
     border-bottom: 1px solid #ddd;
 }
 
 .table th {
-    background-color: #007bff;
+    background-color: #0056b3;
     color: white;
 }
 
@@ -66,7 +87,7 @@ nav a:hover {
 }
 
 .table .btn {
-    background-color: #007bff;
+    background-color: #0056b3;
     color: white;
     padding: 8px 15px;
     text-decoration: none;
@@ -82,7 +103,7 @@ nav a:hover {
 
 /* Botón Home */
 .btn {
-    background-color:#0056b3;
+    background-color: #0056b3;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -97,16 +118,92 @@ nav a:hover {
     background-color: #0056b3;
 }
 
-/* AQUI EN ADELANTE EL FOOTER */
+/* Ajuste de columna de Observación */
+.table td:nth-child(5) {
+    word-wrap: break-word;
+    max-width: 250px; /* Define un ancho máximo para evitar el desbordamiento */
+    white-space: normal; /* Asegura que el texto no se mantenga en una sola línea */
+}
 
-.footer__container {
+/* Alineación de botones en columna de Acciones */
+.table td.acciones {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+    justify-content: flex-start; /* Alineación de los botones a la izquierda */
+    padding: 10px 0; /* Ajuste de padding para una mejor alineación */
+}
+
+/* Ajuste de la paginación */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    padding: 8px 15px;
+    margin: 0 5px;
     background-color: #0056b3;
-    gap: 28px;
-    color:  white;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.pagination a:hover {
+    background-color: #0056b3;
+}
+
+.pagination a.active {
+    background-color: #0056b3;
+    font-weight: bold;
+}
+
+/* Estilo de la tabla y control de ancho */
+.table {
+    width: 105%;
+    table-layout: fixed; /* Esto hace que las columnas tengan un ancho fijo */
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.table td:nth-child(1) {
+    width: 5%;
+}
+
+.table td:nth-child(2) {
+    width: 20%;
+}
+
+.table td:nth-child(3) {
+    width: 20%;
+}
+
+.table td:nth-child(4) {
+    width: 15%;
+}
+
+.table td:nth-child(5) {
+    width: 30%;
+}
+
+.table td:nth-child(6) {
+    width: 10%;
 }
 
 .footer__container {
-    margin: 0;
+    background-color: #0056b3;
+    gap:30px;
+    color: white;
+    margin: 25px 0; /* Espacio arriba y abajo del footer */
+    
+}
+
+.footer__container {
+    margin: 50;
     display: grid;
     place-items: center;
 }
@@ -126,4 +223,24 @@ nav a:hover {
     width: 25px;
     height: 25px;
     fill: white;
+}
+
+/* Estilos del menu */
+/* Fondo y texto básico */
+
+
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 05px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
 }
