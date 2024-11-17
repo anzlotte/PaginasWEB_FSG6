@@ -5,6 +5,11 @@ controller.home = (req,res)=>{
     });
 };
 
+controller.home = (req,res)=>{
+    res.render('clientes',{
+    });
+};
+
 controller.list = (req,res)=>{
     req.getConnection((err, conn)=>{
         conn.query('SELECT * FROM clientes',(err,clientes)=>{
