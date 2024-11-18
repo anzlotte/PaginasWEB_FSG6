@@ -30,7 +30,7 @@ app.use(myConnection(mysql, {
     user: 'root',
     password: '',
     port: 3306,
-    database: 'paginasweb;'
+    database: 'paginasweb'
 },'single'));
 
 app.use(session({
