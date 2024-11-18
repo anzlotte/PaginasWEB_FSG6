@@ -88,13 +88,7 @@ El objetivo principal es ofrecer un entorno fácil de usar tanto para clientes c
 
 ---
 
-5. **Instala las dependencias**:
-   ```bash
-   npm install
-
----
-
-6. **Accede a la Aplicación**
+5. **Accede a la Aplicación**
 - **Disponible en**: [http://localhost:3000/Home](http://localhost:3000/Home)
 
 ---
