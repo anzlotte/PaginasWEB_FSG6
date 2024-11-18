@@ -110,14 +110,18 @@ El objetivo principal es ofrecer un entorno fácil de usar tanto para clientes c
 ```plaintext
 src/
 ├── controllers/
-│   └── clientesControllers.js   # Lógica principal para clientes y usuarios
+│   └── clientesControllers.js               # Lógica principal para clientes y usuarios
 ├── routes/
-│   └── clientes.js              # Rutas del servidor
+│   └── clientes.js                          # Rutas del servidor
 ├── views/
-│   ├── administrador/           # Plantillas EJS para administración
-│   ├── usuario/                 # Plantillas EJS para clientes
-├── app.js                       # Archivo principal de la aplicación
-├── public/                      # Archivos estáticos (CSS, JS, imágenes)
+│   ├── administrador/                       # Plantillas EJS para administración
+│   │    └── inicioSesion.ejs                # Página HTML inicio de sesión.
+│   │    ├── admonUsuarios.ejs               # Página HTML administración de usuarios.
+│   ├── cliente.ejs                          # Página HTML home pantalla principal.
+│   ├── editar_cliente.ejs                   # Página HTML para modificación información clientes.
+│   └── usuario                              # Página HTML de inicio con listado de clientes
+├── app.js                                   # Archivo principal de la aplicación
+├── public/                                  # Archivos estáticos (CSS, JS, imágenes)
 
 ```
 ---
