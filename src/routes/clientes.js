@@ -15,9 +15,7 @@ router.get('/admon', clienteCrontroller.admon);
 router.post('/guardarU',clienteCrontroller.guardarUsuario);
 router.post('/auth',clienteCrontroller.auth);
 router.get('/logout',clienteCrontroller.logout);
-
-
-
-
+router.get('/login', clienteCrontroller.login);
+router.get('/container__equipo', clienteCrontroller.container__equipo);
 
 module.exports = router;

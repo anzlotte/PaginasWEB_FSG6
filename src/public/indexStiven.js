@@ -1,3 +1,24 @@
+// Selecciona todas las cartas
+const cards = document.querySelectorAll('.card-container');
+
+// Agrega el evento de clic a cada carta
+cards.forEach(card => {
+    card.addEventListener('click', function() {
+        // Alterna la clase 'active' para mostrar/ocultar la información
+        card.classList.toggle('active');
+    });
+});
+
+// Si se hace clic fuera de cualquier carta, remueve la clase 'active' de todas
+document.addEventListener('click', function(event) {
+    cards.forEach(card => {
+        // Si el clic no ocurrió en la carta, remueve la clase 'active'
+        if (!card.contains(event.target)) {
+            card.classList.remove('active');
+        }
+    });
+});
+
 const toggleMenu = document.getElementById("toggle-menu");
 const mainMenu = document.getElementById("main-menu");
 
